@@ -1,0 +1,16 @@
+.div-logo {
+  display: flex;
+  margin-left: 10em;
+}
+
+.logo {
+  width: auto;
+  height: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .div-logo {
+    margin: 0;
+    justify-content: center;
+  }
+}

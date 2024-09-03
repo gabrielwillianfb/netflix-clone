@@ -1,0 +1,158 @@
+.formContainer {
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.7);
+  max-width: 450px;
+  /* min-height: 560px; */
+  padding: 1rem 4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#entrar {
+  background: rgb(229, 9, 20);
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+#codigo {
+  background: rgba(128, 128, 128, 0.4);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  min-height: 2.5rem;
+  padding: 0.375rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+#codigo:hover {
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  background: rgba(128, 128, 128, 0.3);
+}
+
+label {
+  color: white;
+}
+
+#ou {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.link {
+  text-align: center;
+  color: white;
+  margin: 1rem auto;
+}
+
+#checkbox {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#remember {
+  width: 1.25rem;
+  height: 2.75rem;
+  max-height: 1.5em;
+  border-radius: 0.125rem;
+  cursor: pointer;
+}
+
+#remember:checked {
+  appearance: revert;
+  accent-color: white;
+}
+
+#remember:hover:checked {
+  appearance: revert;
+  accent-color: rgb(128, 128, 128);
+}
+
+#label-remember {
+  padding-left: 0.75rem;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#saiba {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+a {
+  color: #0071eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.inputForm {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+  background: rgba(22, 22, 22, 0.7);
+  border-radius: 0.25rem;
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.inputForm.erro {
+  margin-bottom: 0;
+  border: 1px solid rgb(235, 57, 66);
+}
+
+.erro-senha,
+.erro-email {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-top: 0.375rem;
+  color: rgb(235, 57, 66);
+}
+
+.erro-x {
+  width: 1.5rem;
+  height: 1.5rem;
+}

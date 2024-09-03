@@ -1,0 +1,28 @@
+.play {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.info {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .info {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .play {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .info {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

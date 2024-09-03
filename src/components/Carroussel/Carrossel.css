@@ -1,0 +1,50 @@
+/* Carroussel.css */
+
+.carrossel {
+  width: 100%;
+  position: relative; /* Necessário para posicionar as setas dentro do carrossel */
+}
+
+.navigate {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 50px;
+  height: 60px;
+  text-align: center;
+  width: 60px;
+  margin: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.navigate:hover {
+  opacity: 1;
+}
+
+/* Setas posicionadas à esquerda e à direita do carrossel */
+.backwardBtnProps {
+  left: 0;
+}
+
+.forwardBtnProps {
+  right: 0;
+}
+
+.carrossel:hover .navigate {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .navigate {
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+  }
+}
